@@ -1,0 +1,64 @@
+/* Fonts and colors*/
+:root {
+  --font-main: 'Raleway', sans-serif;
+  --font-accent: "Playfair Display", serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --dark: #242B33;
+  --accent: #D4C17F;
+  --white: #fff;
+  --footer-bg: #2D343C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--dark);
+  font-weight: 300;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+
+/* Common styles */
+a {
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  box-shadow: 0 4px 12px #00000033;
+  transform: scale(1.08);
+  color: var(--accent);
+}
+
+.title-2 {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--accent);
+}
+
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
